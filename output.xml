@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.13.2 on win32)" generated="2025-12-20T16:33:25.583068" rpa="false" schemaversion="5">
+<suite id="s1" name="Guvi Testcases" source="C:\Users\Aiswarya\PycharmProjects\PythonProject39\tests\guvi_testcases.robot">
+<kw name="Open GUVI" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:26.286262" level="INFO">Opening browser 'chrome' to base url 'https://www.guvi.in/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-12-20T16:33:26.285764" elapsed="4.570662"/>
+</kw>
+<status status="PASS" start="2025-12-20T16:33:26.284256" elapsed="4.572730"/>
+</kw>
+<test id="s1-t1" name="TC01 Verify URL Launch" line="25">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:32.421277" level="INFO">Current location is 'https://www.guvi.in/'.</msg>
+<arg>${URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-12-20T16:33:31.055410" elapsed="1.366261"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:33.473221" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-125.png"&gt;&lt;img src="selenium-screenshot-125.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:32.423153" elapsed="1.050495"/>
+</kw>
+<status status="PASS" start="2025-12-20T16:33:30.857303" elapsed="2.617267"/>
+</test>
+<test id="s1-t2" name="TC02 Verify Page Title" line="28">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:33.516128" level="INFO">Page title is 'HCL GUVI | Learn to code in your native language'.</msg>
+<arg>HCL GUVI | Learn to code in your native language</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-12-20T16:33:33.481150" elapsed="0.035630"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:33.983960" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-126.png"&gt;&lt;img src="selenium-screenshot-126.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:33.518443" elapsed="0.465757"/>
+</kw>
+<status status="PASS" start="2025-12-20T16:33:33.478406" elapsed="0.509209"/>
+</test>
+<test id="s1-t3" name="TC03 Verify Login Button Visibility &amp; Click" line="31">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:34.927068" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-127.png"&gt;&lt;img src="selenium-screenshot-127.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-20T16:33:34.927595" level="FAIL">The element 'xpath=//button[contains(@class,'tertiary-btn') and normalize-space()='Login']' should be visible, but it is not.</msg>
+<arg>${LOGIN_BTN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-12-20T16:33:33.993004" elapsed="0.949028">The element 'xpath=//button[contains(@class,'tertiary-btn') and normalize-space()='Login']' should be visible, but it is not.</status>
+</kw>
+<kw name="Click Login Button">
+<status status="NOT RUN" start="2025-12-20T16:33:34.943011" elapsed="0.000127"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>login</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:34.943644" elapsed="0.000100"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:36.020321" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-128.png"&gt;&lt;img src="selenium-screenshot-128.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:34.944560" elapsed="1.076116"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:33.991979" elapsed="2.029199">The element 'xpath=//button[contains(@class,'tertiary-btn') and normalize-space()='Login']' should be visible, but it is not.</status>
+</test>
+<test id="s1-t4" name="TC04 Verify SignUp Button Visibility &amp; Click" line="36">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:36.476894" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-129.png"&gt;&lt;img src="selenium-screenshot-129.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-20T16:33:36.477265" level="FAIL">Element with locator 'xpath=//a[contains(@href,'register')]' not found.</msg>
+<arg>${SIGNUP_BTN}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-12-20T16:33:36.024473" elapsed="0.459449">Element with locator 'xpath=//a[contains(@href,'register')]' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SIGNUP_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:36.484782" elapsed="0.000131"/>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>register</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:36.485923" elapsed="0.000254"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:36.486915" elapsed="0.000115"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:37.302799" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-130.png"&gt;&lt;img src="selenium-screenshot-130.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:36.487922" elapsed="0.815139"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:36.022946" elapsed="1.280611">Element with locator 'xpath=//a[contains(@href,'register')]' not found.</status>
+</test>
+<test id="s1-t5" name="TC05 Verify SignUp Navigation URL" line="42">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:37.345888" level="INFO">Clicking element 'xpath=//a[contains(@href,'register')]'.</msg>
+<msg time="2025-12-20T16:33:41.133776" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-131.png"&gt;&lt;img src="selenium-screenshot-131.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-20T16:33:41.134106" level="FAIL">Element with locator 'xpath=//a[contains(@href,'register')]' not found.</msg>
+<arg>${SIGNUP_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-12-20T16:33:37.344610" elapsed="3.793416">Element with locator 'xpath=//a[contains(@href,'register')]' not found.</status>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<arg>https://www.guvi.in/register/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:41.138758" elapsed="0.000116"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:41.139272" elapsed="0.000075"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:43.163917" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-132.png"&gt;&lt;img src="selenium-screenshot-132.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:41.140086" elapsed="2.024080"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:37.342502" elapsed="5.822650">Element with locator 'xpath=//a[contains(@href,'register')]' not found.</status>
+</test>
+<test id="s1-t6" name="TC06 Login With Valid Credentials" line="47">
+<kw name="Click Login Button">
+<msg time="2025-12-20T16:33:43.196799" level="FAIL">No keyword with name 'Click Login Button' found.</msg>
+<status status="FAIL" start="2025-12-20T16:33:43.196647" elapsed="0.000294">No keyword with name 'Click Login Button' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${VALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.198618" elapsed="0.000138"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASS_FIELD}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.199608" elapsed="0.000117"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.200428" elapsed="0.000122"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.201086" elapsed="0.000116"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:43.816801" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-133.png"&gt;&lt;img src="selenium-screenshot-133.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:43.202147" elapsed="0.614900"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:43.175565" elapsed="0.662949">No keyword with name 'Click Login Button' found.</status>
+</test>
+<test id="s1-t7" name="TC07 Login With Invalid Credentials" line="54">
+<kw name="Click Login Button">
+<msg time="2025-12-20T16:33:43.867176" level="FAIL">No keyword with name 'Click Login Button' found.</msg>
+<status status="FAIL" start="2025-12-20T16:33:43.867019" elapsed="0.000301">No keyword with name 'Click Login Button' found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${EMAIL_FIELD}</arg>
+<arg>${INVALID_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.871990" elapsed="0.000160"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASS_FIELD}</arg>
+<arg>${INVALID_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.873764" elapsed="0.000116"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${SUBMIT_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.876047" elapsed="0.000165"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ERROR_MSG}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-12-20T16:33:43.885818" elapsed="0.000369"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:44.548642" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-134.png"&gt;&lt;img src="selenium-screenshot-134.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:43.890292" elapsed="0.658595"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:43.857167" elapsed="0.692251">No keyword with name 'Click Login Button' found.</status>
+</test>
+<test id="s1-t8" name="TC08 Verify Menu Items" line="61">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:44.665654" level="INFO">Current page contains text 'Courses'.</msg>
+<arg>Courses</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-20T16:33:44.552531" elapsed="0.113372"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:44.738806" level="INFO">Current page contains text 'LIVE Classes'.</msg>
+<arg>LIVE Classes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-20T16:33:44.666556" elapsed="0.072912"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:33:44.812890" level="INFO">Current page contains text 'Practice'.</msg>
+<arg>Practice</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-12-20T16:33:44.740631" elapsed="0.072497"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:33:45.305114" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-135.png"&gt;&lt;img src="selenium-screenshot-135.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:33:44.814093" elapsed="0.491254"/>
+</kw>
+<status status="PASS" start="2025-12-20T16:33:44.550779" elapsed="0.795331"/>
+</test>
+<test id="s1-t9" name="TC09 Verify Dobby Assistant" line="66">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:34:15.905278" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-136.png"&gt;&lt;img src="selenium-screenshot-136.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-20T16:34:15.905590" level="FAIL">Text 'Dobby' did not appear in 30 seconds.</msg>
+<arg>Dobby</arg>
+<arg>30s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-12-20T16:33:45.357957" elapsed="30.553671">Text 'Dobby' did not appear in 30 seconds.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:34:16.437688" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-137.png"&gt;&lt;img src="selenium-screenshot-137.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:34:15.912726" elapsed="0.525182"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:45.356395" elapsed="31.096347">Text 'Dobby' did not appear in 30 seconds.</status>
+</test>
+<test id="s1-t10" name="TC10 Logout" line="69">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-12-20T16:34:16.494135" level="INFO">Clicking element 'xpath=//img[contains(@alt,'profile')]'.</msg>
+<msg time="2025-12-20T16:34:18.295665" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-138.png"&gt;&lt;img src="selenium-screenshot-138.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-12-20T16:34:18.295998" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img decoding="async" loading="lazy" alt="learner-profile" srcset="/assets/DfW0ZuJw-learner-1.webp 200w, /assets/wJeRHz4L-learner-1.webp 282w" width="282" height="282" class="⭐️wcmjx1-0 w-28 h-28 md:w-36 md:h-36 mt-auto" q:key="IN_1"&gt; is not clickable at point (280, 628). Other element would receive the click: &lt;span class="dib-mid"&gt;...&lt;/span&gt;
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F4A802F5+28725]
+	(No symbol) [0x00007FF6F49E2AE0]
+	(No symbol) [0x00007FF6F487510A]
+	(No symbol) [0x00007FF6F48D10F8]
+	(No symbol) [0x00007FF6F48CEB42]
+	(No symbol) [0x00007FF6F48CBC51]
+	(No symbol) [0x00007FF6F48CABB1]
+	(No symbol) [0x00007FF6F48BC6B4]
+	(No symbol) [0x00007FF6F48EFFAA]
+	(No symbol) [0x00007FF6F48BBF86]
+	(No symbol) [0x00007FF6F48F01C0]
+	(No symbol) [0x00007FF6F4910181]
+	(No symbol) [0x00007FF6F48EFD53]
+	(No symbol) [0x00007FF6F48BA0E3]
+	(No symbol) [0x00007FF6F48BB471]
+	GetHandleVerifier [0x00007FF6F4DAF30D+3366989]
+	GetHandleVerifier [0x00007FF6F4DC12F0+3440688]
+	GetHandleVerifier [0x00007FF6F4DB78FD+3401277]
+	GetHandleVerifier [0x00007FF6F4B4AAAB+858091]
+	(No symbol) [0x00007FF6F49EE74F]
+	(No symbol) [0x00007FF6F49EA304]
+	(No symbol) [0x00007FF6F49EA49D]
+	(No symbol) [0x00007FF6F49D8B69]
+	BaseThreadInitThunk [0x00007FFC388D7374+20]
+	RtlUserThreadStart [0x00007FFC399DCC91+33]
+</msg>
+<arg>xpath=//img[contains(@alt,'profile')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-12-20T16:34:16.492796" elapsed="1.825147">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img decoding="async" loading="lazy" alt="learner-profile" srcset="/assets/DfW0ZuJw-learner-1.webp 200w, /assets/wJeRHz4L-learner-1.webp 282w" width="282" height="282" class="⭐️wcmjx1-0 w-28 h-28 md:w-36 md:h-36 mt-auto" q:key="IN_1"&gt; is not clickable at point (280, 628). Other element would receive the click: &lt;span class="dib-mid"&gt;...&lt;/span&gt;
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F4A802F5+28725]
+	(No symbol) [0x00007FF6F49E2AE0]
+	(No symbol) [0x00007FF6F487510A]
+	(No symbol) [0x00007FF6F48D10F8]
+	(No symbol) [0x00007FF6F48CEB42]
+	(No symbol) [0x00007FF6F48CBC51]
+	(No symbol) [0x00007FF6F48CABB1]
+	(No symbol) [0x00007FF6F48BC6B4]
+	(No symbol) [0x00007FF6F48EFFAA]
+	(No symbol) [0x00007FF6F48BBF86]
+	(No symbol) [0x00007FF6F48F01C0]
+	(No symbol) [0x00007FF6F4910181]
+	(No symbol) [0x00007FF6F48EFD53]
+	(No symbol) [0x00007FF6F48BA0E3]
+	(No symbol) [0x00007FF6F48BB471]
+	GetHandleVerifier [0x00007FF6F4DAF30D+3366989]
+	GetHandleVerifier [0x00007FF6F4DC12F0+3440688]
+	GetHandleVerifier [0x00007FF6F4DB78FD+3401277]
+	GetHandleVerifier [0x00007FF6F4B4AAAB+858091]
+	(No symbol) [0x00007FF6F49EE74F]
+	(No symbol) [0x00007FF6F49EA304]
+	(No symbol) [0x00007FF6F49EA49D]
+	(No symbol) [0x00007FF6F49D8B69]
+	BaseThreadInitThunk [0x00007FFC388D7374+20]
+	RtlUserThreadStart [0x00007FFC399DCC91+33]
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//*[contains(text(),'Logout')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-12-20T16:34:18.318787" elapsed="0.000098"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Login</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-12-20T16:34:18.319351" elapsed="0.000088"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2025-12-20T16:34:18.568073" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-139.png"&gt;&lt;img src="selenium-screenshot-139.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-12-20T16:34:18.320175" elapsed="0.248075"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:34:16.487696" elapsed="2.080917">ElementClickInterceptedException: Message: element click intercepted: Element &lt;img decoding="async" loading="lazy" alt="learner-profile" srcset="/assets/DfW0ZuJw-learner-1.webp 200w, /assets/wJeRHz4L-learner-1.webp 282w" width="282" height="282" class="⭐️wcmjx1-0 w-28 h-28 md:w-36 md:h-36 mt-auto" q:key="IN_1"&gt; is not clickable at point (280, 628). Other element would receive the click: &lt;span class="dib-mid"&gt;...&lt;/span&gt;
+  (Session info: chrome=132.0.6834.160); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F4A802F5+28725]
+	(No symbol) [0x00007FF6F49E2AE0]
+	(No symbol) [0x00007FF6F487510A]
+	(No symbol) [0x00007FF6F48D10F8]
+	(No symbol) [0x00007FF6F48CEB42]
+	(No symbol) [0x00007FF6F48CBC51]
+	(No symbol) [0x00007FF6F48CABB1]
+	(No symbol) [0x00007FF6F48BC6B4]
+	(No symbol) [0x00007FF6F48EFFAA]
+	(No symbol) [0x00007FF6F48BBF86]
+	(No symbol) [0x00007FF6F48F01C0]
+	(No symbol) [0x00007FF6F4910181]
+	(No symbol) [0x00007FF6F48EFD53]
+	(No symbol) [0x00007FF6F48BA0E3]
+	(No symbol) [0x00007FF6F48BB471]
+	GetHandleVerifier [0x00007FF6F4DAF30D+3366989]
+	GetHandleVerifier [0x00007FF6F4DC12F0+3440688]
+	GetHandleVerifier [0x00007FF6F4DB78FD+3401277]
+	GetHandleVerifier [0x00007FF6F4B4AAAB+858091]
+	(No symbol) [0x00007FF6F49EE74F]
+	(No symbol) [0x00007FF6F49EA304]
+	(No symbol) [0x00007FF6F49EA49D]
+	(No symbol) [0x00007FF6F49D8B69]
+	BaseThreadInitThunk [0x00007FFC388D7374+20]
+	RtlUserThreadStart [0x00007FFC399DCC91+33]
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-12-20T16:34:18.574346" elapsed="3.308003"/>
+</kw>
+<status status="FAIL" start="2025-12-20T16:33:25.586707" elapsed="56.295779"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Guvi Testcases" id="s1" pass="3" fail="7" skip="0">Guvi Testcases</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-12-20T16:33:25.587509" level="ERROR">Error in file 'C:\Users\Aiswarya\PycharmProjects\PythonProject39\tests\guvi_testcases.robot' on line 22: Setting variable '${INVALID_PASSWORD} 123456' failed: Invalid variable name '${INVALID_PASSWORD} 123456'.</msg>
+</errors>
+</robot>
